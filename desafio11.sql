@@ -1,14 +1,13 @@
-SELECT 
-    notes
+SELECT
+  notes
 FROM
-    northwind.purchase_orders
+  northwind.purchase_orders
 WHERE
-    notes LIKE '%30%' OR notes LIKE '%31%'
-        OR notes LIKE '%32%'
-        OR notes LIKE '%33%'
-        OR notes LIKE '%34%'
-        OR notes LIKE '%35%'
-        OR notes LIKE '%36%'
-        OR notes LIKE '%37%'
-        OR notes LIKE '%38%'
-        OR notes LIKE '%39%';
+  notes BETWEEN 'Purchase generated based on Order #30'
+  AND 'Purchase generated based on Order #39';
+-- A linha de código onde o "BETWEEN" foi implementado
+-- usou-se o código do "Felipe Castanheira - Turma 17",
+-- como base na implementação, pois é um código mais
+-- limpo do que eu havia implementado usando o "OR"
+-- várias vezes por desconhecer a possibilidade de que
+-- o "BETWEEN" pode ser usado com string.
