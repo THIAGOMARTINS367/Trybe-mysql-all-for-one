@@ -1,6 +1,6 @@
 SELECT 
-    `id`
+    id
 FROM
-    `products`
-ORDER BY `id` DESC
+    products
+ORDER BY id DESC
 LIMIT 5;

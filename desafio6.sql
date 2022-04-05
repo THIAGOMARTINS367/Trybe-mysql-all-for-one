@@ -1,5 +1,5 @@
 SELECT 
-    `id`, `product_name`
+    id, product_name
 FROM
-    `products`
-ORDER BY `product_name`;
+    products
+ORDER BY product_name;
